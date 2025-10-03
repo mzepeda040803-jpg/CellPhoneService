@@ -5,6 +5,18 @@ public class CellPhone {
     private String model;
     private String carrier;
 
+    public CellPhone(long serialNumber, String model, String carrier, long phoneNumber, String owner){
+        this.serialNumber = "serialNumber";
+        this.model = "model";
+        this.carrier = "carrier";
+        this.phoneNumber = "phoneNumber";
+        this.owner = "owner";
+    }
+
+    public CellPhone() {
+
+    }
+
     public String getSerialNumber() {
         return serialNumber;
     }
@@ -47,4 +59,8 @@ public class CellPhone {
 
     private String phoneNumber;
     private String owner;
+
+    public void display() {
+        System.out.println(this.getSerialNumber() + " " + this.getModel() + " " + this.getCarrier() + " " + this.getPhoneNumber() + " " + this.getOwner());
+    }
 }
